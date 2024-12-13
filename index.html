@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Analyze your weekly work hours with a fun and engaging interface.">
+    <title>Work Week Fun Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>🌟 Work Week Analysis 🌟</h1>
+    </header>
+    <main class="container">
+        <section class="results">
+            <h2>📊 Your Weekly Insights</h2>
+            <div class="card">
+                <p><strong>Total Hours:</strong> <span id="totalHours">0</span> ⏰</p>
+                <p><strong>Average Hours per Day:</strong> <span id="averageHours">0</span> 📅</p>
+                <p><strong>Day with Most Hours Worked:</strong> <span id="maxDay">N/A</span> 🏆</p>
+                <p><strong>Days Worked:</strong> <span id="daysWorked">0</span> 💪</p>
+                <p><strong>Full-Time Week:</strong> <span id="isFullTime">N/A</span> ✅</p>
+            </div>
+        </section>
+        <section class="chart">
+            <h3>📈 Daily Hours</h3>
+            <div id="barChart"></div>
+        </section>
+        <button class="refresh-button" onclick="location.reload()">🔄 Refresh Analysis</button>
+        <footer>
+            <p>&copy; 2024 Work Week Analyzer. Crafted with ❤️.</p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
